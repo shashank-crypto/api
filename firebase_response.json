@@ -1,0 +1,152 @@
+{
+  "signup": {
+    "userCredential": {
+      "user": {
+        "uid": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+        "email": "shashank.k.chaudhary@gmail.com",
+        "emailVerified": false,
+        "isAnonymous": false,
+        "providerData": [
+          {
+            "providerId": "password",
+            "uid": "shashank.k.chaudhary@gmail.com",
+            "displayName": null,
+            "email": "shashank.k.chaudhary@gmail.com",
+            "phoneNumber": null,
+            "photoURL": null
+          }
+        ],
+        "stsTokenManager": {
+          "refreshToken": "APJWN8e7uIoUQpmxU5So0W5wgQ8S1iLwETB7EnMgelHSrDng01rXfTSCfddqvc9nioILMI9XgnJqF5Gvj253c2adJ9cggrNfJMEKG9NFlEHh-ZRd4pocr4np4bWqByd4aCHg3sXevp1a8AJa7WCmLxoiZyfwrW-wkOZFzeCeK2XDmZaeWrzeFJu8-bmuni51nKayjYUySzCpVyf68C-O_Kdy6BJtcy-si4_AmqA5WABYzShnCPeNFmoprEAk-PdwK6DfZV4zSXIb",
+          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODM3NTU5NywidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4Mzc1NTk3LCJleHAiOjE2NzgzNzkxOTcsImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.FRa22WrmklAEFdbA0hXaIsD82i31kW897bBAtZiqwx5PrP1amOKOsDfR674hGfzCOFLe7HtId2Y3OxatZ-8jvcenA2obqjXIKOLToQVlYCpL7t2T1wvVIs8C2vXgMM1uXyW6AOcDHINFJqSNu7cQ4v3hxKRy_fw9_RwVNPQ-LyAZQbXFPrWbt5zt1yxFzlpytjxsOAJlXul41TiuN7nsC0mCRRsDxrSFRFIz8IeZvsyUxDrRZUbq1Tkya4jJsSGvnfjQrO48aJA20WKsGurK3wjqoaE9mYjKCK_Ar8dswewHMd4HlM_u9wlcG6xAoJiERLY_Rj_ya24AG2tCQ_Vafw",
+          "expirationTime": 1678379196854
+        },
+        "createdAt": "1678375597296",
+        "lastLoginAt": "1678375597296",
+        "apiKey": "AIzaSyAxk4j4Vly5I9ILdNfXQofUMEZzfqs1-f4",
+        "appName": "[DEFAULT]"
+      },
+      "providerId": null,
+      "_tokenResponse": {
+        "kind": "identitytoolkit#SignupNewUserResponse",
+        "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODM3NTU5NywidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4Mzc1NTk3LCJleHAiOjE2NzgzNzkxOTcsImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.FRa22WrmklAEFdbA0hXaIsD82i31kW897bBAtZiqwx5PrP1amOKOsDfR674hGfzCOFLe7HtId2Y3OxatZ-8jvcenA2obqjXIKOLToQVlYCpL7t2T1wvVIs8C2vXgMM1uXyW6AOcDHINFJqSNu7cQ4v3hxKRy_fw9_RwVNPQ-LyAZQbXFPrWbt5zt1yxFzlpytjxsOAJlXul41TiuN7nsC0mCRRsDxrSFRFIz8IeZvsyUxDrRZUbq1Tkya4jJsSGvnfjQrO48aJA20WKsGurK3wjqoaE9mYjKCK_Ar8dswewHMd4HlM_u9wlcG6xAoJiERLY_Rj_ya24AG2tCQ_Vafw",
+        "email": "shashank.k.chaudhary@gmail.com",
+        "refreshToken": "APJWN8e7uIoUQpmxU5So0W5wgQ8S1iLwETB7EnMgelHSrDng01rXfTSCfddqvc9nioILMI9XgnJqF5Gvj253c2adJ9cggrNfJMEKG9NFlEHh-ZRd4pocr4np4bWqByd4aCHg3sXevp1a8AJa7WCmLxoiZyfwrW-wkOZFzeCeK2XDmZaeWrzeFJu8-bmuni51nKayjYUySzCpVyf68C-O_Kdy6BJtcy-si4_AmqA5WABYzShnCPeNFmoprEAk-PdwK6DfZV4zSXIb",
+        "expiresIn": "3600",
+        "localId": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2"
+      },
+      "operationType": "signIn"
+    },
+    "user": {
+      "uid": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+      "email": "shashank.k.chaudhary@gmail.com",
+      "emailVerified": false,
+      "isAnonymous": false,
+      "providerData": [
+        {
+          "providerId": "password",
+          "uid": "shashank.k.chaudhary@gmail.com",
+          "displayName": null,
+          "email": "shashank.k.chaudhary@gmail.com",
+          "phoneNumber": null,
+          "photoURL": null
+        }
+      ],
+      "stsTokenManager": {
+        "refreshToken": "APJWN8e7uIoUQpmxU5So0W5wgQ8S1iLwETB7EnMgelHSrDng01rXfTSCfddqvc9nioILMI9XgnJqF5Gvj253c2adJ9cggrNfJMEKG9NFlEHh-ZRd4pocr4np4bWqByd4aCHg3sXevp1a8AJa7WCmLxoiZyfwrW-wkOZFzeCeK2XDmZaeWrzeFJu8-bmuni51nKayjYUySzCpVyf68C-O_Kdy6BJtcy-si4_AmqA5WABYzShnCPeNFmoprEAk-PdwK6DfZV4zSXIb",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODM3NTU5NywidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4Mzc1NTk3LCJleHAiOjE2NzgzNzkxOTcsImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.FRa22WrmklAEFdbA0hXaIsD82i31kW897bBAtZiqwx5PrP1amOKOsDfR674hGfzCOFLe7HtId2Y3OxatZ-8jvcenA2obqjXIKOLToQVlYCpL7t2T1wvVIs8C2vXgMM1uXyW6AOcDHINFJqSNu7cQ4v3hxKRy_fw9_RwVNPQ-LyAZQbXFPrWbt5zt1yxFzlpytjxsOAJlXul41TiuN7nsC0mCRRsDxrSFRFIz8IeZvsyUxDrRZUbq1Tkya4jJsSGvnfjQrO48aJA20WKsGurK3wjqoaE9mYjKCK_Ar8dswewHMd4HlM_u9wlcG6xAoJiERLY_Rj_ya24AG2tCQ_Vafw",
+        "expirationTime": 1678379196854
+      },
+      "createdAt": "1678375597296",
+      "lastLoginAt": "1678375597296",
+      "apiKey": "AIzaSyAxk4j4Vly5I9ILdNfXQofUMEZzfqs1-f4",
+      "appName": "[DEFAULT]"
+    }
+  },
+  "signIn": {
+    "userCredential": {
+      "user": {
+        "uid": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+        "email": "shashank.k.chaudhary@gmail.com",
+        "emailVerified": false,
+        "isAnonymous": false,
+        "providerData": [
+          {
+            "providerId": "password",
+            "uid": "shashank.k.chaudhary@gmail.com",
+            "displayName": null,
+            "email": "shashank.k.chaudhary@gmail.com",
+            "phoneNumber": null,
+            "photoURL": null
+          }
+        ],
+        "stsTokenManager": {
+          "refreshToken": "APJWN8cGzZQX_DyMgVjJrasJwjAwcrIvsawh8iwsENeltZi9uoAXa0Ozlhx5G54Qxr2hQsmjccNKX7gAEbFY9zoe8eT-3h5b_nfDNfHxSNHkwYX7xt_PyoZ4_uIFiVXBGf3Iy2kMGexXrOJ1ik-AVMtxrPwforqeu-xAkBwfxD7GS_BAN2kJ-9IXBgm0OvQD5UkDoWZ5Hhgpw7WRfftkXZnAZ2rV0DCYhJj6pV8hVQ-eJh8B0LEy1zdLiUbqcClugL28Y_TMuczH",
+          "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODM3NTg1NywidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4Mzc1ODU3LCJleHAiOjE2NzgzNzk0NTcsImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.EkoHvmH63bVpCSDkDAptsm9GkKDkJTOFmAyPKPEiUYtqD6KY2MPxq7SloT0-8EPQAPeuXXob9K3zEyMfZm3801zWLehhxIgFgdRbIwZQ8N5DusLdgBwYB51rd2HPqWBk_B7m4P-QfNn6LuQ7_uBoXXJtgHPGEP_uym-WHyuGjdgqMf7MlLGKcZ3pBe74_zPLhyXvq6_KeVWGNbpTUieqcSv2LncwtMDC4F4idrgiLFiJJj0ekaKua9mjpAC5RzH7MztWSxWuXa09wCScMgiSAhCsg_9GQjpWTLyNW7bWkDiUMuHesbqq6RUgJ0b5GnjvcuwVPe948c7oDKWiKCSv4w",
+          "expirationTime": 1678379457703
+        },
+        "createdAt": "1678375597296",
+        "lastLoginAt": "1678375857471",
+        "apiKey": "AIzaSyAxk4j4Vly5I9ILdNfXQofUMEZzfqs1-f4",
+        "appName": "[DEFAULT]"
+      },
+      "providerId": null,
+      "_tokenResponse": {
+        "kind": "identitytoolkit#VerifyPasswordResponse",
+        "localId": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+        "email": "shashank.k.chaudhary@gmail.com",
+        "displayName": "",
+        "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODM3NTg1NywidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4Mzc1ODU3LCJleHAiOjE2NzgzNzk0NTcsImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.EkoHvmH63bVpCSDkDAptsm9GkKDkJTOFmAyPKPEiUYtqD6KY2MPxq7SloT0-8EPQAPeuXXob9K3zEyMfZm3801zWLehhxIgFgdRbIwZQ8N5DusLdgBwYB51rd2HPqWBk_B7m4P-QfNn6LuQ7_uBoXXJtgHPGEP_uym-WHyuGjdgqMf7MlLGKcZ3pBe74_zPLhyXvq6_KeVWGNbpTUieqcSv2LncwtMDC4F4idrgiLFiJJj0ekaKua9mjpAC5RzH7MztWSxWuXa09wCScMgiSAhCsg_9GQjpWTLyNW7bWkDiUMuHesbqq6RUgJ0b5GnjvcuwVPe948c7oDKWiKCSv4w",
+        "registered": true,
+        "refreshToken": "APJWN8cGzZQX_DyMgVjJrasJwjAwcrIvsawh8iwsENeltZi9uoAXa0Ozlhx5G54Qxr2hQsmjccNKX7gAEbFY9zoe8eT-3h5b_nfDNfHxSNHkwYX7xt_PyoZ4_uIFiVXBGf3Iy2kMGexXrOJ1ik-AVMtxrPwforqeu-xAkBwfxD7GS_BAN2kJ-9IXBgm0OvQD5UkDoWZ5Hhgpw7WRfftkXZnAZ2rV0DCYhJj6pV8hVQ-eJh8B0LEy1zdLiUbqcClugL28Y_TMuczH",
+        "expiresIn": "3600"
+      },
+      "operationType": "signIn"
+    },
+    "user": {
+      "uid": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+      "email": "shashank.k.chaudhary@gmail.com",
+      "emailVerified": false,
+      "isAnonymous": false,
+      "providerData": [
+        {
+          "providerId": "password",
+          "uid": "shashank.k.chaudhary@gmail.com",
+          "displayName": null,
+          "email": "shashank.k.chaudhary@gmail.com",
+          "phoneNumber": null,
+          "photoURL": null
+        }
+      ],
+      "stsTokenManager": {
+        "refreshToken": "APJWN8cGzZQX_DyMgVjJrasJwjAwcrIvsawh8iwsENeltZi9uoAXa0Ozlhx5G54Qxr2hQsmjccNKX7gAEbFY9zoe8eT-3h5b_nfDNfHxSNHkwYX7xt_PyoZ4_uIFiVXBGf3Iy2kMGexXrOJ1ik-AVMtxrPwforqeu-xAkBwfxD7GS_BAN2kJ-9IXBgm0OvQD5UkDoWZ5Hhgpw7WRfftkXZnAZ2rV0DCYhJj6pV8hVQ-eJh8B0LEy1zdLiUbqcClugL28Y_TMuczH",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODM3NTg1NywidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4Mzc1ODU3LCJleHAiOjE2NzgzNzk0NTcsImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.EkoHvmH63bVpCSDkDAptsm9GkKDkJTOFmAyPKPEiUYtqD6KY2MPxq7SloT0-8EPQAPeuXXob9K3zEyMfZm3801zWLehhxIgFgdRbIwZQ8N5DusLdgBwYB51rd2HPqWBk_B7m4P-QfNn6LuQ7_uBoXXJtgHPGEP_uym-WHyuGjdgqMf7MlLGKcZ3pBe74_zPLhyXvq6_KeVWGNbpTUieqcSv2LncwtMDC4F4idrgiLFiJJj0ekaKua9mjpAC5RzH7MztWSxWuXa09wCScMgiSAhCsg_9GQjpWTLyNW7bWkDiUMuHesbqq6RUgJ0b5GnjvcuwVPe948c7oDKWiKCSv4w",
+        "expirationTime": 1678379457703
+      },
+      "createdAt": "1678375597296",
+      "lastLoginAt": "1678375857471",
+      "apiKey": "AIzaSyAxk4j4Vly5I9ILdNfXQofUMEZzfqs1-f4",
+      "appName": "[DEFAULT]"
+    },
+    "error": {
+      "code": "auth/email-already-in-use",
+      "customData": {
+        "appName": "[DEFAULT]",
+        "_tokenResponse": {
+          "error": {
+            "code": 400,
+            "message": "EMAIL_EXISTS",
+            "errors": [
+              {
+                "message": "EMAIL_EXISTS",
+                "domain": "global",
+                "reason": "invalid"
+              }
+            ]
+          }
+        }
+      },
+      "name": "FirebaseError"
+    }
+  }
+}

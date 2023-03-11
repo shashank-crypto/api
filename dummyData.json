@@ -1,0 +1,86 @@
+{
+  "userCredential": {
+    "user": {
+      "uid": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+      "email": "shashank.k.chaudhary@gmail.com",
+      "emailVerified": false,
+      "isAnonymous": false,
+      "providerData": [
+        {
+          "providerId": "password",
+          "uid": "shashank.k.chaudhary@gmail.com",
+          "displayName": null,
+          "email": "shashank.k.chaudhary@gmail.com",
+          "phoneNumber": null,
+          "photoURL": null
+        }
+      ],
+      "stsTokenManager": {
+        "refreshToken": "APJWN8dEnE62xWmd7NJl56lEGoAqquW_HQehmUsTPZw-R9FdsupiKi5aZdmmRtPSXkAeVvC7r6yq_Yv7vhU1CVdnP8x5Zja3MqnfMcnQICgPNHg0w8CgnybSubOjyIOZmuI7-Rwx0cauQvl1sMLByk7Etp7E5a939IIbkkDe7hDGKxNrRbC62b8Vlry25IJx3qqfDkpzHbXsJhP1EHmQo8Hmspp1-rWN154ZpZ_C3WAL6SwzKFfqWaeAwCbI4z-nyGl38wl9aWNe",
+        "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODQ1NTM2OSwidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4NDU1MzY5LCJleHAiOjE2Nzg0NTg5NjksImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.NU5_6rXxlrfaL-4yTDpZSksTLLhsMQBHj5GwLGxdiG3TbX0q8LEO1ETTmDINpNQN6MInyDutbFQQqEFEouKkeJFw__VdqZTqNTGLYn1SISbQPQhpnIq3ffr5Ea5p4LEHFel8HOBHjs_jzEOL6EMkpEZwjXX7PC4aG0YpvHDgZueTKUx5Wz3UmFAYWIdBq8fSycTQvEOA2xSsHY4OyEBZB0svqvXEhWgNgca0Po15c5SA9gTdF4GAGGJaY2dwLbgxQnaERqkuAjfClwgSkqL6Cu_JGzuM3ZVQFsE7leRqecUak87mBmugU7jaTb1jWtEYxGM_HFikjrrsFuQV-0ixWQ",
+        "expirationTime": 1678458969404
+      },
+      "createdAt": "1678375597296",
+      "lastLoginAt": "1678455369428",
+      "apiKey": "AIzaSyAxk4j4Vly5I9ILdNfXQofUMEZzfqs1-f4",
+      "appName": "[DEFAULT]"
+    },
+    "providerId": null,
+    "_tokenResponse": {
+      "kind": "identitytoolkit#VerifyPasswordResponse",
+      "localId": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+      "email": "shashank.k.chaudhary@gmail.com",
+      "displayName": "",
+      "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODQ1NTM2OSwidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4NDU1MzY5LCJleHAiOjE2Nzg0NTg5NjksImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.NU5_6rXxlrfaL-4yTDpZSksTLLhsMQBHj5GwLGxdiG3TbX0q8LEO1ETTmDINpNQN6MInyDutbFQQqEFEouKkeJFw__VdqZTqNTGLYn1SISbQPQhpnIq3ffr5Ea5p4LEHFel8HOBHjs_jzEOL6EMkpEZwjXX7PC4aG0YpvHDgZueTKUx5Wz3UmFAYWIdBq8fSycTQvEOA2xSsHY4OyEBZB0svqvXEhWgNgca0Po15c5SA9gTdF4GAGGJaY2dwLbgxQnaERqkuAjfClwgSkqL6Cu_JGzuM3ZVQFsE7leRqecUak87mBmugU7jaTb1jWtEYxGM_HFikjrrsFuQV-0ixWQ",
+      "registered": true,
+      "refreshToken": "APJWN8dEnE62xWmd7NJl56lEGoAqquW_HQehmUsTPZw-R9FdsupiKi5aZdmmRtPSXkAeVvC7r6yq_Yv7vhU1CVdnP8x5Zja3MqnfMcnQICgPNHg0w8CgnybSubOjyIOZmuI7-Rwx0cauQvl1sMLByk7Etp7E5a939IIbkkDe7hDGKxNrRbC62b8Vlry25IJx3qqfDkpzHbXsJhP1EHmQo8Hmspp1-rWN154ZpZ_C3WAL6SwzKFfqWaeAwCbI4z-nyGl38wl9aWNe",
+      "expiresIn": "3600"
+    },
+    "operationType": "signIn"
+  },
+  "user": {
+    "uid": "MiAXIqHSC5a9ZMAxPwRPBljw7XI2",
+    "email": "shashank.k.chaudhary@gmail.com",
+    "emailVerified": false,
+    "isAnonymous": false,
+    "providerData": [
+      {
+        "providerId": "password",
+        "uid": "shashank.k.chaudhary@gmail.com",
+        "displayName": null,
+        "email": "shashank.k.chaudhary@gmail.com",
+        "phoneNumber": null,
+        "photoURL": null
+      }
+    ],
+    "stsTokenManager": {
+      "refreshToken": "APJWN8dEnE62xWmd7NJl56lEGoAqquW_HQehmUsTPZw-R9FdsupiKi5aZdmmRtPSXkAeVvC7r6yq_Yv7vhU1CVdnP8x5Zja3MqnfMcnQICgPNHg0w8CgnybSubOjyIOZmuI7-Rwx0cauQvl1sMLByk7Etp7E5a939IIbkkDe7hDGKxNrRbC62b8Vlry25IJx3qqfDkpzHbXsJhP1EHmQo8Hmspp1-rWN154ZpZ_C3WAL6SwzKFfqWaeAwCbI4z-nyGl38wl9aWNe",
+      "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4ODI0YTI2ZjFlY2Q1NjEyN2U4OWY1YzkwYTg4MDYxMTJhYmU5OWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbWVkaWNhbHJlY29yZG1hbmFnZW1lbnQtM2I3YzQiLCJhdWQiOiJtZWRpY2FscmVjb3JkbWFuYWdlbWVudC0zYjdjNCIsImF1dGhfdGltZSI6MTY3ODQ1NTM2OSwidXNlcl9pZCI6Ik1pQVhJcUhTQzVhOVpNQXhQd1JQQmxqdzdYSTIiLCJzdWIiOiJNaUFYSXFIU0M1YTlaTUF4UHdSUEJsanc3WEkyIiwiaWF0IjoxNjc4NDU1MzY5LCJleHAiOjE2Nzg0NTg5NjksImVtYWlsIjoic2hhc2hhbmsuay5jaGF1ZGhhcnlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInNoYXNoYW5rLmsuY2hhdWRoYXJ5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.NU5_6rXxlrfaL-4yTDpZSksTLLhsMQBHj5GwLGxdiG3TbX0q8LEO1ETTmDINpNQN6MInyDutbFQQqEFEouKkeJFw__VdqZTqNTGLYn1SISbQPQhpnIq3ffr5Ea5p4LEHFel8HOBHjs_jzEOL6EMkpEZwjXX7PC4aG0YpvHDgZueTKUx5Wz3UmFAYWIdBq8fSycTQvEOA2xSsHY4OyEBZB0svqvXEhWgNgca0Po15c5SA9gTdF4GAGGJaY2dwLbgxQnaERqkuAjfClwgSkqL6Cu_JGzuM3ZVQFsE7leRqecUak87mBmugU7jaTb1jWtEYxGM_HFikjrrsFuQV-0ixWQ",
+      "expirationTime": 1678458969404
+    },
+    "createdAt": "1678375597296",
+    "lastLoginAt": "1678455369428",
+    "apiKey": "AIzaSyAxk4j4Vly5I9ILdNfXQofUMEZzfqs1-f4",
+    "appName": "[DEFAULT]"
+  },
+  "error": {
+    "code": "auth/email-already-in-use",
+    "customData": {
+      "appName": "[DEFAULT]",
+      "_tokenResponse": {
+        "error": {
+          "code": 400,
+          "message": "EMAIL_EXISTS",
+          "errors": [
+            {
+              "message": "EMAIL_EXISTS",
+              "domain": "global",
+              "reason": "invalid"
+            }
+          ]
+        }
+      }
+    },
+    "name": "FirebaseError"
+  }
+}
