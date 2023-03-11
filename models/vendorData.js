@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const pointSchema = require('./pointSchema');
 
 const feedback = {
     userId : {
@@ -25,6 +26,26 @@ const review = {
     }
 }
 
+const address = {
+    addressName : String,
+    flat : String,
+    street : String,
+    area : String,
+    city : String,
+    state : String,
+    pincode : String,
+    landmark : String,
+    phone : String,
+    completeAddress : String,
+    lat : Number,
+    long : Number,
+    location : {
+        type: pointSchema,
+        index: '2dsphere',
+        required : true
+    }
+}
+
 const vendorModel = new mongoose.Schema({
     vendorId : String,
     disabled : Boolean,
@@ -34,8 +55,6 @@ const vendorModel = new mongoose.Schema({
     photoURL : String,
     phoneNumber : String,
     phoneVerified : Boolean,
-    currAddress : Number,
-    capacity : Number,
     runningSubscriptions : [subscriptionPlan],
     runningTrials : [trialPlans],
     feedbacks : [{
@@ -47,6 +66,7 @@ const vendorModel = new mongoose.Schema({
         required : true
     }],
     avgRating : Number,
+    address : address,
     paymentDetails : Object
 });
 

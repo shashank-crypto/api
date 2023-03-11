@@ -82,6 +82,7 @@ const subscription = new mongoose.Schema({
         body: String
     }, // if vendor wants to send a notification to the user with the subscription
     canPause : Boolean, // if the user can pause the subscription
+    isRefundable : Boolean, // in case user wants to cancel the subscription
     inactveDays : [Number], // days when vendor will not deliver food, 0 for sunday, 1 for monday, 2 for tuesday, and so on
     menu : [menu], // menu for each day
     feedbacks : [{

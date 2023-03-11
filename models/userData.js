@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const pointSchema = require('./pointSchema');
 
 const address = {
     addressName : String,
@@ -12,7 +13,12 @@ const address = {
     phone : String,
     completeAddress : String,
     lat : Number,
-    long : Number
+    long : Number,
+    location : {
+        type: pointSchema,
+        index: '2dsphere',
+        required : true
+    }
 }
 
 const subscriptionInfo = {
