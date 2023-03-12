@@ -57,7 +57,10 @@ const review = {
 // should I add subscribers array here?
 
 const subscription = new mongoose.Schema({
-    subscriptionName : String,
+    subscriptionName : {
+        type: String,
+        required: true
+    },
     vendorId : {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'vendor'
@@ -77,6 +80,11 @@ const subscription = new mongoose.Schema({
     pricePerMonth : Number, // if planType is monthly
     desciption : String,
     pushNotification : Boolean,
+    hasTrial : Boolean,
+    trialOptions : {
+        minDays : Number,
+        pricePerDay : Number
+    },
     notification : {
         heading: String,
         body: String

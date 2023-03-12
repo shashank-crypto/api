@@ -47,9 +47,20 @@ const address = {
 }
 
 const vendorModel = new mongoose.Schema({
-    vendorId : String,
-    disabled : Boolean,
-    email : String,
+    vendorId : {
+        type: String,
+        required: true,
+        unique: true,
+        index: true
+    },
+    disabled : {
+        type: Boolean,
+        default: false
+    },
+    email : {
+        type : String,
+        required : true
+    },
     emailVerified : Boolean,
     displayName : String,
     photoURL : String,
@@ -66,7 +77,11 @@ const vendorModel = new mongoose.Schema({
         required : true
     }],
     avgRating : Number,
-    address : address,
+    currAddress : {
+        type: Number, 
+        default : 0
+    },
+    savedAddresses : [address],
     paymentDetails : Object
 });
 

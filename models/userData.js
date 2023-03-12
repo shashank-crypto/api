@@ -62,11 +62,13 @@ const userModel = new mongoose.Schema({
     userId : {
         type: String, 
         unique : true,
-        index : true
+        index : true,
+        required : true
     },
     email : {
         type: String, 
-        unique : true
+        unique : true,
+        required : true
     },
     emailVerified : {
         type: Boolean, 
@@ -88,7 +90,11 @@ const userModel = new mongoose.Schema({
         type: String, 
         default : "true"
     },
-    disabled : Boolean,
+    profileComplete : Boolean,
+    disabled : {
+        type : Boolean,
+        default : false
+    },
     currAddress : {
         type: Number, 
         default : 0
@@ -104,8 +110,14 @@ const userModel = new mongoose.Schema({
         lunch: subscriptionInfo,
         dinner: subscriptionInfo
     },
-    hasActiveSubscription : Boolean,
-    hasTrial : Boolean,
+    hasActiveSubscription : {
+        type : Boolean,
+        default : false
+    },
+    hasTrial : {
+        type : Boolean,
+        default : false
+    },
     history : {
         subscriptions : [{
             subscription : {
