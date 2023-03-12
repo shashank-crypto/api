@@ -1,3 +1,5 @@
+const createPlan = require("../../controllers/createPlan")
+
 const req = {
     body : {
         planData : {
@@ -23,3 +25,5 @@ const req = {
         }
     }
 }
+
+createPlan(req, {}, (data) => console.log(data))
