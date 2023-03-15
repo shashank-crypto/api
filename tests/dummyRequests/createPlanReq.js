@@ -1,4 +1,7 @@
 const createPlan = require("../../controllers/createPlan")
+const { addTrial } = require('../../services/subsrciption');
+const subscriptionPlan = require('../../models/subscriptionPlan');
+const connectDB = require("../../configs/db");
 
 const req = {
     body : {
@@ -26,4 +29,13 @@ const req = {
     }
 }
 
-createPlan(req, {}, (data) => console.log(data))
+
+const test = async () => {
+    await connectDB()
+    createPlan(req, {}, (data) => console.log(data))
+    // const data = await subscriptionPlan.find({vendorId : "5f9f1b9b9c9b8c2b8c8b8b8b"});
+    // const update = await addTrial(data[0], {minDays : 3, pricePerDay : 160});
+    // console.log(update)
+}
+
+test()

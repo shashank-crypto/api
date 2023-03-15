@@ -1,9 +1,11 @@
 // trialPlan or subscriptionPlan
 // only vendors can create plans
+const connectDB = require("../configs/db");
 const { missingKeys, errorResponse } = require("../helpers/basicFunctions");
 const { STATUS } = require("../helpers/constants");
+const subscription = require("../models/subscriptionPlan");
 
-const createPlan = (req, res, next) => {
+const createPlan = async (req, res, next) => {
     console.log("createPlan");
     res.controller = "createPlan";
 
@@ -32,6 +34,8 @@ const createPlan = (req, res, next) => {
             pricePerDay,
             pricePerWeek,
             pricePerMonth,
+            hasTrial,
+            trialOption,
             description,
             canPause,
             isRefundable,
@@ -72,6 +76,21 @@ const createPlan = (req, res, next) => {
         if (pricePerDay) subscriptionPlan.pricePerDay = pricePerDay;
         if (pricePerWeek) subscriptionPlan.pricePerWeek = pricePerWeek;
         if (pricePerMonth) subscriptionPlan.pricePerMonth = pricePerMonth;
+
+        if (hasTrial && trialOption.minDays) {
+            subscriptionPlan.hasTrial = hasTrial;
+            subscriptionPlan.trialOption = {
+                minDays : trialOption.minDays,
+                pricePerDay : trialOption.pricePerDay || pricePerDay || pricePerWeek/7 || pricePerMonth/30
+            };
+        }
+
+        const newPlan = new subscription(subscriptionPlan);
+        const savedPlan = await newPlan.save();
+
+        res.statusCode = STATUS.CREATED;
+        res.message = "Plan created successfully"
+        res.data = savedPlan;
 
         return next();
     } catch (error) {

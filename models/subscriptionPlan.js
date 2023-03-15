@@ -78,26 +78,38 @@ const subscription = new mongoose.Schema({
     pricePerDay : Number, // if planType is daily
     pricePerWeek : Number, // if planType is weekly
     pricePerMonth : Number, // if planType is monthly
-    desciption : String,
+    description : {
+        type : String,
+        required : true
+    },
+    disabled : {
+        type: Boolean,
+        default: false
+    },
     pushNotification : Boolean,
-    hasTrial : Boolean,
-    trialOptions : {
+    hasTrial : {
+        type : Boolean,
+        default : false
+    },
+    trialOption : {
         minDays : Number,
         pricePerDay : Number
     },
     notification : {
         heading: String,
-        body: String
+        body: String,
+        image: String
     }, // if vendor wants to send a notification to the user with the subscription
+    menuImage : String, // image of the menu
     canPause : Boolean, // if the user can pause the subscription
     isRefundable : Boolean, // in case user wants to cancel the subscription
     inactveDays : [Number], // days when vendor will not deliver food, 0 for sunday, 1 for monday, 2 for tuesday, and so on
     menu : [menu], // menu for each day
-    feedbacks : [{
+    feedbacks : [{ // only vendors can see the feedbacks
         type: feedback,
         required: true
     }], // feedbacks from the user
-    reviews : [{
+    reviews : [{ // everyone can see the reviews
         type : review,
         required : true
     }], // reviews from the user

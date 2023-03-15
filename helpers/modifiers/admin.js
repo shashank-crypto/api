@@ -5,3 +5,5 @@
 // see other users' orders
 // see vendors and their plans
 // see all plans
+// disable user and vendor accounts
+// make others admin

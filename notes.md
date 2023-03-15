@@ -7,4 +7,19 @@
     - defining rules for delivery
 
 - modifiers :
-    - modifiers check at the roles and define rules, but I need to define roles and rules for each roles somwhere.
+    - modifiers check at the roles and define rules, but I need to define roles and rules for each roles somewhere.
+
+- Authentication :
+    - should I take the user data each time. On each call to the endpoint a call to the db is not good for db.
+    - Caching this call ? 
+    - Data to cache : 
+    {
+        email : "shashank.k.chaudhary@gmail.com",
+        phoneNUmber : "",
+        phoneVerified : false,
+        displayName : "Shashank",
+        disabled : false,
+        isAdmin : false,
+        hasActiveSubscription : false,
+        hasTrial : false
+    }

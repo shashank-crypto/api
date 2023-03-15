@@ -34,13 +34,16 @@ const subscriptionInfo = {
     startDate : Date,
     endDate : Date,
     status : String, // active, inactive, cancelled
-    savedAdderss : Number
+    savedAdderss : {
+        type : Number,
+        default : 0
+    }
 }
 
 const trialInfo = {
-    trialId : {
+    subscriptionId : {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'trial'
+        ref: 'subscription'
     },
     vendorId : {
         type: mongoose.Schema.Types.ObjectId,
