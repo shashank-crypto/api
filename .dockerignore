@@ -1,0 +1,6 @@
+dummyData.json
+node_modules
+firebase_response.json
+credentials
+.env
+*.md

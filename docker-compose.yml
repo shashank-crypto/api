@@ -1,0 +1,59 @@
+version: '3'
+
+networks:
+  dabba:
+    driver: bridge
+
+services:
+  db:
+    image: mongo:latest
+    container_name: db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+    networks:
+      - dabba
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data_container:/data
+    networks:
+      - dabba
+  api:
+    image: dapi
+    container_name: dapi
+    build: 
+      context: ${CODE}/api
+      dockerfile: ${CODE}/api/Dockerfile
+    depends_on:
+      - db
+      - redis
+    networks:
+      - dabba
+    volumes:
+      - ${CODE}/api:/usr/src/app
+    ports:
+      - 5000:5000
+    command: npm run dev
+  web:
+    image: dweb
+    container_name: dweb
+    build: 
+      context: ${CODE}/firebase_auth
+      dockerfile: ${CODE}/firebase_auth/Dockerfile
+    depends_on:
+      - api
+    networks:
+      - dabba
+    volumes:
+      - ${CODE}/firebase_auth:/usr/src/app
+    ports:
+      - 3000:3000
+

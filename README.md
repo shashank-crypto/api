@@ -17,3 +17,18 @@ In Bangalore there are so many people who are completely dependent on the outsid
     - Can subscribe to a plan.
     - Can cancel or pause subscriptions.
     - Has many options to choose from and can see others' reviews and ratings
+
+### Endpoints 
+
+- `/createUser`
+- `/createVendor`
+- `/createPlan`
+- `/subscribe`
+- `/getPlans`
+- `/fetchPlans` 
+    - First fetch plans by radius (default)
+    - Filters 
+        - By vendors
+        - By name
+        - By session
+        - Sorting by [price, rating]

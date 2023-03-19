@@ -94,6 +94,7 @@ const createPlan = async (req, res, next) => {
 
         return next();
     } catch (error) {
+        if (error.status) return next(error);
         return next(error);
     }
 };

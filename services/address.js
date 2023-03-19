@@ -1,3 +1,8 @@
+// Description: This file contains all the functions related to address
+// ! just receive the lat, long and convert it to address using google maps api
+
+const { errorResponse } = require("../helpers/basicFunctions");
+
 const verifyAddress = (address) => {
     let message = "OK";
     const {
@@ -30,7 +35,7 @@ const verifyAddress = (address) => {
 // adding address in vendor's address array and user's address array
 const addAddress = (address, modelObject, phoneNumber=null) => {
     const verificationMsg = verifyAddress(address);
-    if (verificationMsg !== "OK") throw new Error(verificationMsg);
+    if (verificationMsg !== "OK") errorResponse(STATUS.BAD_REQUEST, verificationMsg);
     const { addressName, flat, street, area, city, state, pincode, landmark, phone, lat, long } = address;
 
     const completeAddress = `${flat}, ${street}, ${area}, ${city}, ${state}, ${pincode}, ${landmark}`;
@@ -53,7 +58,9 @@ const addAddress = (address, modelObject, phoneNumber=null) => {
             coordinates: [long, lat]
         }
     };
-
+    if (!modelObject.savedAddresses) modelObject.savedAddresses = [];
     modelObject.savedAddresses.push(newAddress);
     return modelObject;
 }
+
+module.exports = {addAddress}

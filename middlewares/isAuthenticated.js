@@ -6,16 +6,19 @@ const User = require("../models/userData");
 // authenticate user based on firebase token
 // attached with each request
 const isAuthenticated = async (req, res, next) => {
+    res.controller = "isAuthenticated";
     const authToken = req.headers.authorization.split(" ")[1];
 
     try{
         const decodedToken = await admin.auth().verifyIdToken(authToken);
         if (!decodedToken.email_verified) 
             return errorResponse(STATUS.UNAUTHORIZED, "Email not verified", next);
-        const user = await User.find({userId : decodedToken.uid});
+        let user = (await User.find({userId : decodedToken.uid}))[0];
+        // user = user[0];
         if (!user) 
             return errorResponse(STATUS.NO_CONTENT, "User not found", next)
-        if (!user.profileComplete) 
+        // ! may think about removing the req.body.profile check and add another check
+        if (!req?.body?.profile && !user.profileComplete) 
             return errorResponse(STATUS.UNAUTHORIZED, "Profile not complete", next);
         if (user.disabled) 
             return errorResponse(STATUS.FORBIDDEN, "User disabled", next);
@@ -24,7 +27,7 @@ const isAuthenticated = async (req, res, next) => {
     }
     catch(error){
         console.log(error.message);
-        return res.status(401).send(error.message);
+        return errorResponse(STATUS.UNAUTHORIZED, error.message, next);
     }
 }
 

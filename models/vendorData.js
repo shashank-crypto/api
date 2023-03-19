@@ -46,12 +46,12 @@ const address = {
     }
 }
 
+// !handle running trials and running subscriptions
 const vendorModel = new mongoose.Schema({
-    vendorId : {
-        type: String,
-        required: true,
-        unique: true,
-        index: true
+    userId : {
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'user',
+        required : true
     },
     disabled : {
         type: Boolean,
@@ -62,12 +62,17 @@ const vendorModel = new mongoose.Schema({
         required : true
     },
     emailVerified : Boolean,
-    displayName : String,
+    displayName : {
+        type : String,
+        required : true
+    },
     photoURL : String,
     phoneNumber : String,
     phoneVerified : Boolean,
-    runningSubscriptions : [subscriptionPlan],
-    runningTrials : [trialPlans],
+    runningSubscriptions : [{
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'subscription'
+    }],
     feedbacks : [{
         type : feedback,
         required : true
@@ -81,7 +86,10 @@ const vendorModel = new mongoose.Schema({
         type: Number, 
         default : 0
     },
-    savedAddresses : [address],
+    savedAddresses : [{
+        type : address,
+        required : true
+    }],
     paymentDetails : Object
 });
 

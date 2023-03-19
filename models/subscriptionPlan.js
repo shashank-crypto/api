@@ -65,6 +65,10 @@ const subscription = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'vendor'
     },
+    // vendorName : { // display name of the vendor
+    //     type: String, 
+    //     required: true
+    // },
     session : {
         type: String, 
         enum: ['breakfast', 'lunch', 'dinner'],

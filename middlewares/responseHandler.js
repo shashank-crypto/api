@@ -6,22 +6,22 @@ const responseHandler = (req, res) => {
     return res.status(res.statusCode).send({
         status: res.statusCode || STATUS.OK,
         message: res.message,
-        data: res.data
+        data: res.data,
     });
 }
 
 const errorHandler = (err, req, res, next) => {
     console.log("Error Handler");
     if (err) {
-        console.log("Erorr Object Created", res.controller);
-        res.statusCode = error.status || STATUS.INTERNAL_SERVER_ERROR;
-        res.error = error.message || "Internal Server Error";
+        console.log("Erorr Object Created from", res.controller);
+        res.statusCode = err.status || STATUS.INTERNAL_SERVER_ERROR;
+        res.error = err.message || "Internal Server Error";
         return res.status(res.statusCode).send({
             status: res.statusCode,
             error: res.error
         });
     }
-    next()
+    return next()
 }
 
 module.exports = {responseHandler, errorHandler};

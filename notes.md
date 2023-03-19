@@ -23,3 +23,11 @@
         hasActiveSubscription : false,
         hasTrial : false
     }
+
+- Subscription payment handling :
+    - security deposit at the beginning for the period of the subscription
+    - can make the payment upfront
+
+# Address in backend
+- Hadling address from backend on just lat and long 
+- Getting required fields from gMap

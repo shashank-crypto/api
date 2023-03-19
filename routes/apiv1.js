@@ -1,9 +1,11 @@
 const experss = require('express');
 const router = experss.Router();
 
-const userRouter = require('./userRoute');
+const userRouter = require('./user');
+const vendorRouter = require('./vendor');
 
 router.use("/user", userRouter);
+router.use("/vendor", vendorRouter);
 router.get("/", (req, res, next) => {
     res.controller = {
         endpoint : "apiv1",

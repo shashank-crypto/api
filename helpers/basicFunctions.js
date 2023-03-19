@@ -1,6 +1,6 @@
 const missingKeys = (obj, keys) => {
     if (typeof obj !== 'object') {
-        return false;
+        return keys;
     }
     return keys.filter(key => !obj[key])
 };

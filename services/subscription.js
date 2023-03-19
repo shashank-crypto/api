@@ -84,5 +84,15 @@ const addMenu = async (subscriptionId, menu, res=null) => {
     }
 }
 
+const fetchPlans = async (res=null) => {
+    if (res) res.controller = "listPlans";
+    try {
+        const plans = await subscriptionPlan.find();
+        return plans;
+    }
+    catch (error) {
+        return errorResponse(STATUS.INTERNAL_SERVER_ERROR, error.message);
+    }
+}
 
-module.exports = {addTrial};
+module.exports = {addTrial, fetchPlans};
