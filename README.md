@@ -32,3 +32,19 @@ In Bangalore there are so many people who are completely dependent on the outsid
         - By name
         - By session
         - Sorting by [price, rating]
+
+## Required ENVs
+```
+PORT = ''
+
+# MongoDB connection details
+MONGO_USER = ''
+MONGO_PASSWORD = ''
+MONGO_URI = ""
+
+# redis connection details
+REDIS_HOST = '127.0.0.1'
+REDIS_PORT = 6379
+REDIS_DB = 0
+REDIS_PASSWORD = ''
+```
