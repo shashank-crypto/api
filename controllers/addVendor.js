@@ -10,28 +10,27 @@ const { addAddress } = require('../services/address');
 const registerAsVendor = async (req, res, next) => {
     console.log("registerAsVendor");
     // const { userId, email, phoneNumber } = req.body;
-    if (missingKeys(req.user, ['uid', 'email', 'emailVerified']) > 0) 
+    if (missingKeys(req.user, ['userId', 'email', 'emailVerified', 'phoneNumber', 'phoneVerified']) > 0) 
         return errorResponse(STATUS.UNAUTHORIZED, "Unauthorized access", next);
-    const { uid, email, emailVerified } = req.user;
+    const { userId, email, emailVerified, phoneNumber, phoneVerified } = req.user;
     // get user with uid and get the phone Number
-    const requiredKeys = ['displayName'];
+    const requiredKeys = missingKeys(req?.body, ['displayName', 'photoURL']);
     if (requiredKeys > 0)
         return errorResponse(STATUS.BAD_REQUEST, `Missing keys: ${requiredKeys.join(', ')}`, next);
-    const { displayName, photoURL, address } = req.body;
+    const { displayName, photoURL, address, businessPhoneNumber } = req.body;
 
-    
-    const userData = await user.findById({userId : uid});
     try {
         res.controller = "registerAsVendor";
         const vendorInfo = new vendor({
-            userId : uid,
+            userId : userId,
             email : email,
             emailVerified : emailVerified,
-            phoneNumber : userData.phoneNumber,
-            phoneNumberVerified : userData.phoneNumberVerified,
+            phoneNumber : businessPhoneNumber || phoneNumber,
+            phoneNumberVerified : businessPhoneNumber ? false : phoneVerified,
             displayName : displayName,
             photoURL : photoURL,
         });
+        // ! change this to see if no address is provided then take the address from the user
         if (address) addAddress(address, vendorInfo, userData.phoneNumber);
         const savedVendor = await vendorData.save();
         res.statusCode = STATUS.CREATED;
