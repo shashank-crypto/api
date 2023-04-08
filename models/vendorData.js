@@ -66,6 +66,10 @@ const vendorModel = new mongoose.Schema({
         type : String,
         required : true
     },
+    onlyVeg : {
+        type : Boolean,
+        default : false
+    },
     photoURL : String,
     phoneNumber : String,
     phoneVerified : Boolean,
