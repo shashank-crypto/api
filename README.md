@@ -48,3 +48,17 @@ REDIS_PORT = 6379
 REDIS_DB = 0
 REDIS_PASSWORD = ''
 ```
+## Authors
+
+- [@shashank-crypto](https://github.com/shashank-crypto)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Feedback
+
+If you have any feedback, please reach out at shashank.k.chaudhary@gmail.com
+
