@@ -1,8 +1,13 @@
-const missingKeys = (obj, keys) => {
+const missingKeys = (obj, keys, next = null) => {
     if (typeof obj !== 'object') {
         return keys;
     }
-    return keys.filter(key => !obj[key])
+    const missingKeys =  keys.filter(key => !obj[key])
+    // ! need to validate this condition
+    if (next && typeof next == 'function' && missingKeys > 0) {
+        return errorResponse(STATUS.BAD_REQUEST, `Missing keys: ${missingKeys.join(', ')}`, next);
+    }
+    return missingKeys;
 };
 
 const errorResponse = (status, message, next=null) => {
