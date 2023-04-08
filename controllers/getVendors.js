@@ -49,22 +49,36 @@ const getVendors = async (req, res, next) => {
 
 const filterPlansQuery = (filter) => {
     let planQuery = {
-        menuType : {}
+        menuType: {},
     };
-    const { isVeg, isJain, isGlutenFree, isLactoseFree, isKeto, isLowCalorie, canPause, hasTrial, session, planType } = filter;
+    const {
+        isVeg,
+        isJain,
+        isGlutenFree,
+        isLactoseFree,
+        isKeto,
+        isLowCalorie,
+        canPause,
+        hasTrial,
+        session,
+        planType,
+    } = filter;
     if (avgRating) planQuery.avgRating = { $gte: avgRating };
     if (isVeg != undefined) planQuery.menuType.isVeg = isVeg;
     if (isJain != undefined) planQuery.menuType.isJain = isJain;
-    if (isGlutenFree != undefined) planQuery.menuType.isGlutenFree = isGlutenFree;
-    if (isLactoseFree != undefined) planQuery.menuType.isLactoseFree = isLactoseFree;
+    if (isGlutenFree != undefined)
+        planQuery.menuType.isGlutenFree = isGlutenFree;
+    if (isLactoseFree != undefined)
+        planQuery.menuType.isLactoseFree = isLactoseFree;
     if (isKeto != undefined) planQuery.menuType.isKeto = isKeto;
-    if (isLowCalorie != undefined) planQuery.menuType.isLowCalorie = isLowCalorie;
+    if (isLowCalorie != undefined)
+        planQuery.menuType.isLowCalorie = isLowCalorie;
     if (canPause != undefined) planQuery.canPause = canPause;
     if (hasTrial != undefined) planQuery.hasTrial = hasTrial;
     if (session != undefined) planQuery.session = session;
     if (planType != undefined) planQuery.planType = planType;
     return planQuery;
-}
+};
 
 const plans = async (req, res, next) => {
     console.log("plans");
@@ -85,4 +99,4 @@ const plans = async (req, res, next) => {
     }
 };
 
-module.exports = {getVendors, plans};
+module.exports = { getVendors, plans };
