@@ -37,6 +37,7 @@ services:
       - redis
     networks:
       - dabba
+    tty: true
     volumes:
       - ${CODE}/api:/usr/src/app
     ports:

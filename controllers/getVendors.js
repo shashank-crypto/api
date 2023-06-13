@@ -52,6 +52,7 @@ const filterPlansQuery = (filter) => {
         menuType: {},
     };
     const {
+        avgRating,
         isVeg,
         isJain,
         isGlutenFree,

@@ -1,5 +1,7 @@
 // what can admins do ?
 
+// Mostly read access
+
 // see other users
 // see other users' subscriptions
 // see other users' orders
